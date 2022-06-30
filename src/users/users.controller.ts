@@ -20,7 +20,8 @@ export class UsersController {
 
     @Post()
     createUsers(@Body() user:CreateUserDto){
-        return 'creando usuario';
+        console.log(user.name,user.type, user.age, user.dni)
+        return 'Creando usuario';
     }
 
     @Put(':userId')
@@ -33,6 +34,6 @@ export class UsersController {
     @Delete(':userId')
     eliminateUser(@Param('userId') userId){
         console.log(userId);
-        return `eliminando un usuario número: ${userId}`;//altgr }
+        return `eliminando el usuario número: ${userId}`;
     }
 }
