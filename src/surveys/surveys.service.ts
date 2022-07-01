@@ -26,7 +26,7 @@ export class SurveysService {
     }
 
     getSurvey(id: number): Survey{
-        return this.surveys.find(survey=>survey.id === id)
+        return this.surveys.find(survey=> survey.id === id)
     }
 
 }

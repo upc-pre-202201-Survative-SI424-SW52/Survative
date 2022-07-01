@@ -9,7 +9,7 @@ export class SurveysController {
 
     constructor(private surveyService: SurveysService){}
 
-    @Get(':surveyId')
+    @Get()
     getSurveys(): Survey[]{
         return this.surveyService.getSurveys();
     }
